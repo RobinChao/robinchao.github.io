@@ -1,0 +1,96 @@
+# Site settings 配置站点
+title: 'Technical.io'
+description: 'Robin，80后，主业iOS开发，移动开发者，热爱技术，学习中。很高兴能够在这里与你分享对技术对生活的思考与记录。'
+keyword: 'iOS，Developer，Swift，Objective-C，Maching Learning，机器学习，神经网络，读书笔记，职场，管理，开发，AI，人生，管理技能，读书'
+url: '' # your host
+
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
+
+# Navigation links
+nav:
+  home: '/'
+  archive: '/archive.html'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2017
+
+# Author 配置博主信息
+author: '张永超'
+nickname: 'Robin'
+bio: 'Thoughts, stories and ideas.'
+avatar: '/assets/img/head.jpg'
+
+# Search
+search: true
+
+# Night mode
+nightMode: false
+
+# Comments 评论功能
+comments:
+  disqus: false
+  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+  gitment: false
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站
+# url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  weibo: '//weibo.com/Robin0Chao'
+  github: '//github.com/RobinChao'
+  twitter: '//twitter.com/zh_robin'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 8
+paginate_path: 'page:num'
+# exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+# markdown: kramdown
+# highlighter: rouge
+# kramdown:
+#   input: GFM
+  # syntax_highlighter: rouge
+
+# RSS
+RSS: true
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
