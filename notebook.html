@@ -2,7 +2,7 @@
 layout: default
 title: Notebook 
 description: 学至于行而止矣。行之,明也。
-header-img: /assets/img/notebook.jpg
+header-img: /assets/img/hero.jpg
 ---
 
 {% include header.html %}
@@ -10,8 +10,7 @@ header-img: /assets/img/notebook.jpg
 <div
     class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
     data-theme="{{ site.theme-color }}"
-    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
->
+    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}">
     <h2>{{ page.title }}</h2>
     <h3>{{ page.description }}</h3>
 </div>

@@ -10,8 +10,7 @@ header-img: /assets/img/mindx.jpg
 <div
     class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
     data-theme="{{ site.theme-color }}"
-    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
->
+    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}">
     <h2>{{ page.title }}</h2>
     <h3>{{ page.description }}</h3>
 </div>

@@ -2,7 +2,7 @@
 layout: default
 home-title: Technical.io 
 description: 兵者，贵在坚韧，勇气次之。
-header-img: /assets/img/hero.jpg
+header-img: /assets/img/cover.jpg
 ---
 
 {% include header.html %}
@@ -10,8 +10,7 @@ header-img: /assets/img/hero.jpg
 <div
     class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
     data-theme="{{ site.theme-color }}"
-    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
->
+    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}">
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
 </div>
