@@ -7,7 +7,7 @@
 <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
 <![endif]-->
 <input id="nm-switch" type="hidden" value="{{ site.nightMode }}"> {% include header.html %}
-
+ 
 <header
 class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}"
 data-theme="{{ site.theme-color }}"
@@ -21,6 +21,9 @@ data-theme="{{ site.theme-color }}"
     {% endif %}
   </div>
   <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}
+  <h3 class="post-subtitle"> 『{{ page.subtitle }}』</h3>
+  {% endif %}
   <div class="post-meta">
     <span class="post-meta-item"><i class="iconfont icon-author"></i>{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
     <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
@@ -32,11 +35,7 @@ data-theme="{{ site.theme-color }}"
 {% endif %}
 </header>
 
-<div class="post-content visible">
-  {% if page.subtitle %}
-  <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-  {% endif %}
-
+<div class="post-content visible"> 
   {% if page.quote %}
    <article class="markdown-body">
       <blockquote>
@@ -52,10 +51,9 @@ data-theme="{{ site.theme-color }}"
   </article>
   {% endif %}
 
-
-  <article class="markdown-body">
+  <div class="visible">
     {{ page.content }}
-  </article>
+  </div>
 
   {% if site.social-share %}
   <div class="social-share-wrapper">

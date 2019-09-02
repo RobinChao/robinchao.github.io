@@ -10,6 +10,8 @@ baseurl: ''
 # Navigation links
 nav:
   home: '/'
+  notebook: '/notebook.html'
+  mindx: '/mindx.html'
   archive: '/archive.html'
   tags: '/tags.html'
 
@@ -18,7 +20,7 @@ footer:
   since: 2017
 
 # Author 配置博主信息
-author: '张永超'
+author: 'Robin'
 nickname: 'Robin'
 bio: 'Thoughts, stories and ideas.'
 avatar: '/assets/img/head.jpg'
@@ -63,7 +65,6 @@ recommend-condition-size: 12 # a tag will be recommended if the size of it is mo
 # Build settings
 paginate: 8
 paginate_path: 'page:num'
-# exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
 
 # Markdown
 markdown: kramdown
@@ -86,6 +87,7 @@ permalink: /:year/:month/:day/:title.html
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - _posts/.ipynb_checkpoints/
   - gemfiles/
   - Gemfile
   - Gemfile.lock

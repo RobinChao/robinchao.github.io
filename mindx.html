@@ -1,0 +1,44 @@
+---
+layout: default
+title: Mr.Mind
+description: 学。而后思。
+header-img: /assets/img/mindx.jpg
+---
+
+{% include header.html %}
+
+<div
+    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
+    data-theme="{{ site.theme-color }}"
+    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
+>
+    <h2>{{ page.title }}</h2>
+    <h3>{{ page.description }}</h3>
+</div>
+
+<main class="g-container home-content"> 
+		<div class="container gallery-container"> 
+                <div class="tz-gallery"> 
+                    <div class="row"> 
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a class="lightbox" href="mindx/Empowerment-Mind.png">
+                                    <img src="mindx/Empowerment-Mind.png" alt="Park">
+                                </a>
+                                <div class="caption">
+                                    <h3>《赋能》xmind</h3>
+                                    <p>在错综复杂的新生态下，预测已经成为不可能，运营的关键已从控制—命令式转变为赋能——分布式，唯有如此才能在新生态下取得成功。</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+</main>
+
+<script type="text/javascript" src="/assets/js/baguetteBox.min.js"></script>
+<script type="text/javascript">
+    baguetteBox.run('.tz-gallery');
+</script>
+
+{% include footer.html %} 
