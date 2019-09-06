@@ -10,7 +10,6 @@ baseurl: ''
 # Navigation links
 nav:
   home: '/'
-  notebook: '/notebook.html'
   mindx: '/mindx.html'
   archive: '/archive.html'
   tags: '/tags.html'

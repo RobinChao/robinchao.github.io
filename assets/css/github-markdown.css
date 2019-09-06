@@ -232,8 +232,8 @@
 }
 
 .markdown-body a {
-  color: inherit;
-  text-decoration: underline;
+  color: #923b2c;
+  text-decoration: none;
 }
 
 .markdown-body strong {
