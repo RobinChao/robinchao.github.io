@@ -7,16 +7,32 @@ header-img: /assets/img/mindx.jpg
 
 {% include header.html %}
 
-<div
-    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
-    data-theme="{{ site.theme-color }}"
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}"
     style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}">
     <h2>{{ page.title }}</h2>
     <h3>{{ page.description }}</h3>
 </div>
 
-<main class="g-container home-content"> 
-		<div class="container gallery-container"> 
+
+
+<main class="g-container home-content">
+    {% for tag in site.tags %}
+    {% if tag[0] == 'CoreML' %}
+    <!-- <li> -->
+    {% for post in tag[1] %}
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+    </a>
+    <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 256}}</p>
+
+    {% endfor %}
+    <!-- </li> -->
+    {% endif %}
+    {% endfor%}
+
+
+
+    <!-- <div class="container gallery-container"> 
                 <div class="tz-gallery"> 
                     <div class="row"> 
                         <div class="col-sm-6 col-md-4">
@@ -32,12 +48,12 @@ header-img: /assets/img/mindx.jpg
                         </div> 
                     </div> 
                 </div> 
-            </div>
+            </div> -->
 </main>
 
-<script type="text/javascript" src="/assets/js/baguetteBox.min.js"></script>
+<!-- <script type="text/javascript" src="/assets/js/baguetteBox.min.js"></script>
 <script type="text/javascript">
     baguetteBox.run('.tz-gallery');
-</script>
+</script> -->
 
-{% include footer.html %} 
+{% include footer.html %}

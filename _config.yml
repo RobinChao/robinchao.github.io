@@ -10,7 +10,7 @@ baseurl: ''
 # Navigation links
 nav:
   home: '/'
-  mindx: '/mindx.html'
+  # mindx: '/mindx.html'
   archive: '/archive.html'
   tags: '/tags.html'
 
