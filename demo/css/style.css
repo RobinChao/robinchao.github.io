@@ -1,0 +1,207 @@
+/*!
+ * LEGEND - Free Responsive One Page Template
+ *
+ * Copyright 2013
+ * Created by: Inbetwin Network
+ * URL: http://inbetw.in
+ * Designed and built based on Twitter Bootstrap. */
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Non-semantic
+04 Navbar
+05 Single-Page Sections
+06 Footer
+07 Bootstrap Carousel
+08 Buttons
+09 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+div, article, section, header, footer, nav, li {
+	position:relative;
+}
+.group:after {
+	display:block;
+	height:0;
+	clear:both;
+	content:".";
+	visibility:hidden; /* For clearing */
+}
+body {
+	background:#f0f0f0;
+	color: #312A1E;
+	font-size: 100%;
+	font-family: 'Quattrocento', serif;
+}
+::-moz-selection {
+background:#f0bf00;
+color:#333;
+}
+::selection {
+background:#f0bf00;
+color:#333;
+}
+/*---------- FORMS ----------*/
+
+/* input[type=text], input[type=submit], textarea {
+	width: 100%;
+	padding: 0.5em;
+	font-size: 1em;
+	margin-bottom: 1.5em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+} */
+input, button, select, textarea {
+	font-family: 'Quattrocento', serif;
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+
+
+p {
+	font-size: 1em; /* 16px */
+	line-height: 1.5; /* 24px */
+	margin: 0 0 1.5em 0;
+}
+
+body, input, textarea {
+}
+
+a:hover, a:active {
+	color: #F1505A;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal; /* reset default browser weight for our webfonts */
+	font-family: 'Patua One', cursive;
+}
+h1 {
+	font-size: 1.5em; /* 24px */
+	line-height: 1; /* 24px */
+	margin-top: 1.42em;
+	margin-bottom: 0em;
+}
+h2 {
+	font-size: 1.3125em; /* 21px */
+	line-height: 1.1429; /* 24px */
+	margin-top: 1.1429em;
+	margin-bottom: 0em;
+}
+h3 {
+	font-size: 1.125em; /* 18px */
+	line-height: 1.3333; /* 24px */
+	margin-top: 1.3333em;
+	margin-bottom: 0em;
+}
+h4 {
+	font-size: 1em; /* 16px */
+	line-height: 1.5; /* 24px */
+	margin-top: 1.5em;
+	margin-bottom: 0em;
+}
+h5 {
+	font-size: 0.875em; /* 14px */
+	line-height: 1.7143; /* 24px */
+	margin-top: 1.7143em;
+	margin-bottom: 0em;
+}
+strong {
+	font-weight:normal;
+	font-family: 'Open Sans', sans-serif;
+}
+small {
+	font-size: 0.75em; /* 12px */
+	line-height: 2; /* 24px */
+	margin-top: 2em;
+	margin-bottom: 0em;
+}
+em {
+	font-style: normal;
+	font-family: 'Open Sans';
+}
+.muted {
+	color: #A5A5A2;
+	font-family: 'Quattrocento', serif;
+}
+.impressed {
+	text-shadow:
+ -1px -1px 0 rgba(0, 0, 0, 0.5), /* shadow */  1px 1px 0 rgba(255, 255, 255, 0.9); /* highlight */
+}
+.more-link {
+	font-size: .875em; /* 14px */
+	margin-top: 1.5em;
+	font-family: 'Patua One', cursive;
+}
+.more-link:link, .more-link:visited {
+	color: #f0bf00;
+	text-transform: uppercase;
+}
+
+/* News */
+section#news {
+	background: url("../img/grey-cardboard-bg.png") repeat 0 0;
+}
+section#news .align {
+	font-size: 6em;
+	text-align: center;
+}
+article.post {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+article .inside {
+	margin: 18px 24px 24px;
+	padding-top: 1em;
+	/* background: url("../img/dot-row-2.png") repeat-x scroll 0 0 transparent !important; */
+}
+.post-date {
+	color: #A5A5A2;
+	float: right;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-style: normal;
+	line-height: 2;
+	margin-right: 5px;
+}
+#news h1 {
+	font-size: 3em;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+#news h2 {
+	font-size: 21px;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	color: #312A1E;
+	clear: right;
+}
+
+
+
+

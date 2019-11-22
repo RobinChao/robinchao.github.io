@@ -95,15 +95,8 @@ header-img: /assets/img/cover.jpg
             </section>
             {% endif %}
         </div>
-        <p></p>
-        <div class="g-sidebar">
-            <h3>Recent Posts</h3>
-            <ul>
-                {% for post in site.posts offset:1 limit:12 %}
-                <li><a href="{{ related_post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
+        
+        
 
     </aside>
 

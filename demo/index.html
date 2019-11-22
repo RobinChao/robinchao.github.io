@@ -1,0 +1,87 @@
+---
+layout: default
+title: Hello Code 👨‍💻‍
+description: The story of CodeLife
+header-img: img/top-bg.jpg
+---
+
+{% include header.html %}
+
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}"
+  style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}">
+  <h2>{{ page.title }}</h2>
+  <h3>{{ page.description }}</h3>
+</div>
+
+<!--******************** News Section ********************-->
+<section id="news" class="single-page">
+  <div class="container">
+    <!-- 第一行 -->
+    <div class="row">
+      <!-- CoreML-Practice-with-SwiftUI -->
+      <article class="span4 post"> <img class="img-news" src="img/CoreML-Practice-with-SwiftUI.png" alt="">
+        <div class="inside">
+          <p class="post-date"><i class="icon-calendar"></i> Nov. 18, 2019</p>
+          <h2>CoreML-Practice-with-SwiftUI</h2>
+          <div class="entry-content">
+            <p>使用Swift + SwiftUI进行页面搭建，利用CoreML框架构建机器学习任务。 &hellip;</p>
+            <a href="https://github.com/RobinChao/CoreML-Practice-with-SwiftUI" class="more-link" target="__blank">open
+              in GitHub</a>
+          </div>
+        </div>
+        <!-- /.inside -->
+      </article>
+      <!-- AnimatedPaths -->
+      <article class="span4 post"> <img class="img-news" src="img/AnimatedPaths.gif" alt="">
+        <div class="inside">
+          <p class="post-date"><i class="icon-calendar"></i> Nov. 14, 2019</p>
+          <h2>AnimatedPaths</h2>
+          <div class="entry-content">
+            <p>Animating the drawing of a CGPath with CAShapeLayer.strokeEnd. &hellip;</p>
+            <a href="https://github.com/RobinChao/AnimatedPaths" class="more-link" target="__blank">open in GitHub</a>
+          </div>
+        </div>
+        <!-- /.inside -->
+      </article>
+      <!-- LibSVM-Eval -->
+      <article class="span4 post"> <img class="img-news" src="img/LibSVM.png" alt="">
+        <div class="inside">
+          <p class="post-date"><i class="icon-calendar"></i> Aug. 4, 2018</p>
+          <h2>LibSVM-Eval</h2>
+          <div class="entry-content">
+            <p>对libSVM支持向量机类库源码进行详细的阅读和注释，加强对SVM算法的理解。 &hellip;</p>
+            <a href="https://github.com/RobinChao/LibSVM-Eval" class="more-link" target="__blank">open in GitHub</a>
+          </div>
+        </div>
+        <!-- /.inside -->
+      </article>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- 第二行 -->
+    <div class="row">
+
+      <!-- ChatMessageTableViewController -->
+      <article class="span4 post"> <img class="img-news" src="img/ChatMessageTableViewController.jpg" alt="">
+        <div class="inside">
+          <p class="post-date"><i class="icon-calendar"></i> Mar. 16, 2016</p>
+          <h2>ChatMessageTableViewController</h2>
+          <div class="entry-content">
+            <p>基于<a href="https://github.com/soffes/ssmessagesviewcontroller"
+                target="__blank">SSMessagingViewController</a>修改优化的类iMessage聊天界面。 &hellip;</p>
+            <a href="https://github.com/RobinChao/ChatMessageTableViewController" class="more-link"
+              target="__blank">open in GitHub</a>
+          </div>
+        </div>
+        <!-- /.inside -->
+      </article>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- /.container -->
+</section>
+
+
+{% include footer.html %}
