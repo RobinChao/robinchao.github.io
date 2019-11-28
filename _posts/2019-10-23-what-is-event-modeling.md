@@ -5,7 +5,7 @@ title: What is Event Modeling?
 tags: 技术人生
 categories:
 - 技术人生
-cover: '/assets/img/mindx.jpg'
+cover: '/assets/img/hero.jpg'
 ---
 
 Event Modeling is a way to design a blueprint for an Information System of any size or scale. It is done in a way that allows the clearest communication of the system's workings to the largest possible cross-section of roles in an organization. The system can be checked for completeness by following the single thread of data propagation through it.
