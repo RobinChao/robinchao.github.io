@@ -238,7 +238,7 @@ public mutating func insert(_ value: Value, after node: Node<Value>) -> Node<Val
     return node.next!
 }
 ```
-8221435
+
 > **@discardableResult**指的是接口的调用者忽略此方法的返回值，而编译器不会向上和向下跳过警告。
 
 完成逻辑编写后，回到主Playground，进行链表的**insert(after:)**操作：
