@@ -202,7 +202,7 @@ def deframesignal(frames, signal_length, frame_length, frame_step, winfunc=lambd
 
 在本次实验中，采用DFT长度 N=512，结果值保留前257个系数。
 
-```
+```python
 def spectrum_magnitude(frames, NFFT = 512):
     '''计算每一帧经过FFT变幻以后的频谱的幅度，若frames的大小为N*L,则返回矩阵的大小为N*NFFT'''
     complex_spectrum = numpy.fft.rfft(frames, NFFT)
