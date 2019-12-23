@@ -461,6 +461,12 @@ example(of: "Debug the Queue with RingBuffer") {
     queue.dequeue()
     print(queue.peek ?? "")
 }
+
+/*
+---Example of Debug the Queue with RingBuffer---
+RingBuffer<String>(array: [Optional("Ray"), Optional("Brian"), Optional("Eric"), nil, nil, nil, nil, nil, nil, nil], readIndex: 0, writeIndex: 3)
+RingBuffer<String>(array: [nil, Optional("Brian"), Optional("Eric"), nil, nil, nil, nil, nil, nil, nil], readIndex: 1, writeIndex: 3)
+*/
 ```
 
 ### 优缺点
@@ -535,6 +541,13 @@ example(of: "Debug the Queue with Double Stack") {
     queue.dequeue()
     print(queue.peek ?? "")
 }
+
+/*
+---Example of Debug the Queue with Double Stack---
+["Ray", "Brian", "Eric"]
+["Brian", "Eric"]
+Eric
+*/
 ```
 
 ### 优缺点
