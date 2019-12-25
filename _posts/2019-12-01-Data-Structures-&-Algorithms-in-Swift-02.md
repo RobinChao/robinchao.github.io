@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Robin
-title: \#2\ Swift标准库中的 Array & Dictionary
+title: \#2\ 认识 Array & Dictionary
 tags: 数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift

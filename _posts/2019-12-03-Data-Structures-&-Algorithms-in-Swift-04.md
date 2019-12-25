@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Robin
-title: \#4\ Linked List 的Swift实现
+title: \#4\ 单向链表的Swift实现
 tags: 数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
