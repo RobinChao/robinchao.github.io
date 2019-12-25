@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Robin
-title: \#8\ Swift中队列的实现与操作定义
+title: \#8\ 队列的Swift实现与操作定义
 tags: 数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
