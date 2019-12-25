@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Robin
-title: \#5\ Swift集合协议在Linked List上的应用
+title: \#5\ Linked List && Swift Collection Protocol
 tags: 数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
