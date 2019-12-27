@@ -1,11 +1,11 @@
 ---
 layout: post
 author: Robin
-title: \#10\ 二叉树及其Swfit实现
+title: \#10\ 二叉树及其有序、前序和后序遍历
 tags: 数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
-cover: '/assets/Data-Structures-&-Algorithms-in-Swift/9/cover.png'
+cover: '/assets/Data-Structures-&-Algorithms-in-Swift/10/cover.jpg'
 ---
 
 在上一文中认识了一般树结构，其每一个节点可能会有多个子节点。二叉树也是树型结构，只不过其每一个节点最多只有两个节点，通常称为**左节点**和**右节点**。
