@@ -245,3 +245,111 @@ Found 5!
 
 ### 移除元素
 
+二叉搜索树元素的移除相对元素的搜索和插入复杂一些，有如下三种场景需要考虑：
+
+**Case 1：叶子节点**
+
+对于待删除的元素所在的节点为叶子节点时，是最为简单直接的场景，直接分类该节点和其父节点的链接即可。
+
+![](/assets/Data-Structures-&-Algorithms-in-Swift/11/remove-element-leaf-node.png)
+
+**Case 2：有一个子节点的节点**
+
+当待删除的元素所在的节点拥有一个子节点的时候，不仅仅要删除该节点，还需要将该节点的字节点和树的其余节点进行重新链接，一般情况下，会重新和删除节点的原始父节点进行链接。
+
+![](/assets/Data-Structures-&-Algorithms-in-Swift/11/remove-element-one-node.png)
+
+**Case 3：有两个子节点的节点**
+
+当待删除节点拥有两个子节点的时候，删除操作相对较为复杂一点。例如下图二叉搜索树，想要删除的元素为25：
+
+![](/assets/Data-Structures-&-Algorithms-in-Swift/11/remove-element-two-node-1.png)
+
+如果只是简单的删除节点25，如下：
+
+![](/assets/Data-Structures-&-Algorithms-in-Swift/11/remove-element-two-node-2.png)
+
+此时虽然删除掉了节点25，但是带来了另一个问题。当删除掉节点25之后，会出现两个需要重建链接的节点12和37，此时原节点25的父节点却只有一个子节点的空间，如果如上图那样建立链接的话，会导致该二叉搜索树不成立。为了解决此问题，需要对节点的链接进行交换，使得删除节点后的二叉搜索树依然成立。
+
+方法就是，删除拥有两个节点的节点之后，使用其右侧子树中最小的节点替换删除的节点，根据二叉搜索树的特点，最小的节点即为右侧子树中最左的节点。
+
+![](/assets/Data-Structures-&-Algorithms-in-Swift/11/remove-element-two-node-3.png)
+
+这样进行节点交换之后，二叉搜索树依然有效，因为新节点是右子树中的最小节点，所以右子树中的所有节点仍将大于或等于新节点。并且由于新节点来自右子树，因此左子树中的所有节点都小于新节点。
+
+**算法实现**
+
+```swift
+private extension BinaryNode {
+    var min: BinaryNode {
+        return leftChild?.min ?? self
+    }
+}
+
+extension BinarySearchTree {
+    public mutating func remove(_ value: Element) {
+        root = remove(node: root, value: value)
+    }
+    
+    private func remove(node: BinaryNode<Element>?, value: Element) -> BinaryNode<Element>? {
+        guard let node = node else {
+            return nil
+        }
+        
+        if value == node.value {
+            if node.leftChild == nil && node.rightChild == nil {
+                return nil
+            }
+            if node.leftChild == nil {
+                return node.rightChild
+            }
+            if node.rightChild == nil {
+                return node.leftChild
+            }
+            node.value = node.rightChild!.min.value
+            node.rightChild = remove(node: node.rightChild, value: node.value)
+        } else if value < node.value {
+            node.leftChild = remove(node: node.leftChild, value: value)
+        } else {
+            node.rightChild = remove(node: node.rightChild, value: value)
+        }
+        return node
+    }
+}
+```
+
+```swift
+example(of: "removing a node") {
+    var tree = exampleTree
+    print("Tree before removal:")
+    print(tree)
+    tree.remove(3)
+    print("Tree after removing root:")
+    print(tree)
+}
+
+/*
+---Example of removing a node---
+Tree before removal:
+ ┌──5
+┌──4
+│ └──nil 
+3
+│ ┌──2
+└──1
+ └──0
+
+Tree after removing root:
+┌──5
+4
+│ ┌──2
+└──1
+ └──0
+*/
+```
+
+## 关键点总结
+
+* 二叉搜索树是一种存储排序数据的数据结构；
+* 二叉搜索树的插入、移除和查找算法的平均时间复杂度为O(log n)；
+* 当树不平衡的时候，时间复杂度会降低到O(n)。
