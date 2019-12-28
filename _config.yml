@@ -32,7 +32,7 @@ nightMode: false
 
 # Comments 评论功能
 comments:
-  disqus: true
+  disqus: false
   disqus_url: 'https://technicalio.disqus.com/embed.js'
 
   gitment: false
