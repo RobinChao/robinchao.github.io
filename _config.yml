@@ -82,7 +82,8 @@ RSS: true
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
-permalink: /:year/:month/:day/:title.html
+# permalink: /:year/:month/:day/:title.html
+permalink: /:title/
 
 exclude:
   - .sass-cache/
