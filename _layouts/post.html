@@ -55,9 +55,9 @@ data-theme="{{ site.theme-color }}"
 
   <article class="markdown-body">
     {{ page.content }}
+    {% include postAds.html %}
   </article>
 
-  {% include postAds.html %}
 
   {% if site.social-share %}
   <div class="social-share-wrapper">
