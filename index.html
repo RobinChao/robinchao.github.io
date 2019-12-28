@@ -46,7 +46,9 @@ header-img: /assets/img/cover.png
             </footer>
         </article>
         {% if forloop.index == 3 %}
+        <article class="article-item">
             {% include inFeedAds.html %}
+        </article>
         {% endif %}
         {% endfor %}
         
