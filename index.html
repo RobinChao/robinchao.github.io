@@ -15,7 +15,9 @@ header-img: /assets/img/cover.png
 
 <main class="g-container home-content">
     <div class="article-list">
+        {% var count = 0 %}
         {% for post in paginator.posts %}
+        {% count = count + 1 %}
         <article class="article-item">
             {% if post.cover %}
             <div class="post-cover">
@@ -45,7 +47,11 @@ header-img: /assets/img/cover.png
                     datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
             </footer>
         </article>
+        {% if count % 3 == 0 %}
+            {% include slidebarAds.html %}
+            {% endif %}
         {% endfor %}
+        
 
         {% if paginator.total_pages > 1 %}
         {% include pageNav.html %}
@@ -96,9 +102,9 @@ header-img: /assets/img/cover.png
             {% endif %}
         </div>
 
-        <p></p>
-        {% include slidebarAds.html %}
     </aside>
+    <p></p>
+    {% include slidebarAds.html %}
 
 </main>
 
