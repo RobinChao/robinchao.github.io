@@ -10,9 +10,9 @@ baseurl: ''
 # Navigation links
 nav:
   home: '/'
-  hello code: '/demo/index.html'
-  archive: '/archive.html'
-  tags: '/tags.html'
+  hello code: '/demo/'
+  archive: '/archive/'
+  tags: '/tags/'
 
 # Footer
 footer:
