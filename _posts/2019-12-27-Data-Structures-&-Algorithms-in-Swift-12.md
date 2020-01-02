@@ -5,7 +5,7 @@ title: \#12\ 自平衡二叉搜索树（AVL Trees）
 tags: 数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
-cover: '/assets/Data-Structures-&-Algorithms-in-Swift/11/cover.jpg'
+cover: '/assets/Data-Structures-&-Algorithms-in-Swift/12/cover.png'
 ---
 
 在上文中，已经了解二叉搜索树的O(log n)性能特征，但是当二叉搜索树节点删除中，可能会出现不平衡的树，并降低树的性能到O(n)。这一文的内容将学习另一种改进了的二叉搜索树 --- 自平衡二叉搜索树。
