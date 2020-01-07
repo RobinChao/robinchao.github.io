@@ -2,7 +2,7 @@
 layout: post
 author: Robin
 title: \#1\ 为什么要学习数据结构与算法
-tags: 数据结构与算法
+tags: Swift中的数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
 cover: '/assets/Data-Structures-&-Algorithms-in-Swift/1/cover.jpg'

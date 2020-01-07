@@ -2,7 +2,7 @@
 layout: post
 author: Robin
 title: \#2\ 认识 Array & Dictionary
-tags: 数据结构与算法
+tags: Swift中的数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
 cover: '/assets/Data-Structures-&-Algorithms-in-Swift/2/cover.jpg'

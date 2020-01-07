@@ -2,7 +2,7 @@
 layout: post
 author: Robin
 title: \#7\ Stack & Stack Simple Challenges
-tags: 数据结构与算法
+tags: Swift中的数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
 cover: '/assets/Data-Structures-&-Algorithms-in-Swift/7/cover.jpeg'

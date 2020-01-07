@@ -2,7 +2,7 @@
 layout: post
 author: Robin
 title: \#5\ Linked List && Swift Collection Protocol
-tags: 数据结构与算法
+tags: Swift中的数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
 cover: '/assets/Data-Structures-&-Algorithms-in-Swift/5/cover.jpg'
