@@ -5,7 +5,7 @@ title: \#15\ 堆数据结构（The Heap Data Structure）
 tags: Swift中的数据结构与算法
 categories:
 - Data Structures & Algorithms in Swift
-cover: '/assets/Data-Structures-&-Algorithms-in-Swift/14/cover.jpg'
+cover: '/assets/Data-Structures-&-Algorithms-in-Swift/15/cover.jpg'
 ---
 
 想必抓娃娃机如今没有人不知道其实什么了，抓娃娃机的爪子总是那么的难以控制，总是看起来容易的机会却难以如愿。抓抓机的爪子其实就工作在一个堆数据结构之上，爪子每次抓的几乎都是那边一堆玩具最上面的那一个，只有这样机会才会更大一些。
